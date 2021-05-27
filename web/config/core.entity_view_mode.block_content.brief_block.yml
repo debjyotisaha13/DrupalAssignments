@@ -1,0 +1,10 @@
+uuid: 19ba160f-2205-44ff-b22d-93f6fc4dfddd
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.brief_block
+label: 'Brief block'
+targetEntityType: block_content
+cache: true
