@@ -1,0 +1,48 @@
+uuid: 6cd324f7-d323-449a-b960-46d8e81c4453
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blogs.field_author
+    - field.field.node.blogs.field_author_thumbnail
+    - field.field.node.blogs.field_title
+    - node.type.blogs
+  module:
+    - image
+    - user
+id: node.blogs.default
+targetEntityType: node
+bundle: blogs
+mode: default
+content:
+  field_author:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_author_thumbnail:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

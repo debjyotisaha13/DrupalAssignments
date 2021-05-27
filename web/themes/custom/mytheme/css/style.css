@@ -1,0 +1,62 @@
+#page {
+  background-color: #2c2c2c;
+  color: rgb(255, 0, 212);
+}
+
+.site-branding__logo img {
+  border-radius: 30px;
+  height: 100px;
+  width: 100px;
+}
+
+#main-wrapper {
+  background-color: rgb(167, 154, 251);
+  border-radius: 20px;
+}
+
+h1,h2 {
+  font-family: Pattaya;
+  color: black;
+  text-align: center;
+}
+
+h2 .field {
+  color: white;
+  text-decoration: underline;
+}
+
+#block-mytheme {
+  border-radius: 10px;
+}
+
+.node__content {
+  font-size: large;
+}
+
+.region-sidebar-first div, .region-sidebar-first nav {
+  border-radius: 20px 0 20px 20px;
+}
+
+.region-sidebar-second div {
+  border-radius: 0 20px 20px 20px;
+}
+
+.field__label{
+  font-size: large;
+}
+
+article {
+  text-align: center;
+}
+
+article .field--name-field-author-thumbnail{
+  width: 100%;
+}
+
+article .node__links {
+  text-align: right;
+}
+
+article .field--name-field-title {
+  font-size: large;
+}

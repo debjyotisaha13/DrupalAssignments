@@ -1,0 +1,8 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Pattaya&display=swap: { type: external }
+      css/style.css: {}
+  js:
+    js/script.js: {}
