@@ -1,0 +1,22 @@
+uuid: 57df8021-df85-410f-9d33-9cd3cfebe70e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: authors
+label: Authors
+type: 'canonical_entities:node'
+pattern: 'authors/[node:field_author_name]'
+selection_criteria:
+  b21d2110-9c55-4af9-8c6f-de2f47b692d3:
+    id: node_type
+    bundles:
+      author: author
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b21d2110-9c55-4af9-8c6f-de2f47b692d3
+selection_logic: and
+weight: -5
+relationships: {  }

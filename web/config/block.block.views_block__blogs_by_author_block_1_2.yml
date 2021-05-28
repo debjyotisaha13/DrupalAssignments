@@ -1,0 +1,25 @@
+uuid: e3889ab7-5fb7-4371-bae9-7e45b5685cb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blogs_by_author
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__blogs_by_author_block_1_2
+theme: bartik
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'views_block:blogs_by_author-block_1'
+settings:
+  id: 'views_block:blogs_by_author-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: a636b079-1dbe-43d2-b402-6785d0ec3ab2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.brief
+label: Brief
+targetEntityType: node
+cache: true

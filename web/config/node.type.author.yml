@@ -1,0 +1,17 @@
+uuid: 1ed1100f-845f-4d01-a305-50b7d48078ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Author
+type: author
+description: 'Contains the name and thumbnails of the authors'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

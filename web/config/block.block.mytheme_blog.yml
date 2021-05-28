@@ -1,0 +1,39 @@
+uuid: 43bebcf3-0f6a-4c51-9937-5f63f4b04358
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:04e316c2-7fe1-4ddf-8285-14436c3c1e96'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - mytheme
+id: mytheme_blog
+theme: mytheme
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:04e316c2-7fe1-4ddf-8285-14436c3c1e96'
+settings:
+  id: 'block_content:04e316c2-7fe1-4ddf-8285-14436c3c1e96'
+  label: Blog
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      author: author
+      blogs: blogs
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: brief
+    negate: false
