@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/business_responsive_theme": "^2.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
@@ -93,6 +94,12 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "enable-patching": true,
+        "patches": {
+          "drupal/rules": {
+                "Update patch for rules": "https://www.drupal.org/files/issues/2020-06-14/2800749-36.upcast.patch"
+            }
         }
     }
 }
