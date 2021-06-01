@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:menu_link_content:b46f78a6-5cdb-47ae-9961-8b15a75fdd9e'
+    parent: 'main:'
 name: Blogs
 type: blogs
 description: 'This will contain all the information related to a blog'
