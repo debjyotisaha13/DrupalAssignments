@@ -1,0 +1,51 @@
+uuid: 56641e97-b5b2-4777-a8da-d5efbf9a1ac1
+langcode: en
+status: true
+dependencies: {  }
+id: new_content
+label: 'New Content'
+events:
+  -
+    event_name: 'rules_entity_insert:node'
+description: 'Notify admin when new content is created.'
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 243ba0f6-53ce-4f30-aba9-9839603b578a
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 1745e6c6-53a1-4e5a-961e-3e1d6ace3124
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 540c5fb8-9600-41e0-9b12-6e58c96928f8
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 982222be-cf1a-4ac9-a98b-94da050d4f09
+        weight: 0
+        context_values:
+          roles:
+            - administrator
+          subject: 'New Content Created'
+          message: 'New Content Created by {{node.uid.entity.name}} '
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          roles:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_email_to_users_of_role
