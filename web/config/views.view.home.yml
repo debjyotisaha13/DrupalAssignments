@@ -191,7 +191,7 @@ display:
             label: ''
           entity_type: node
           plugin_id: entity_queue_position
-      title: home
+      title: Blogs
       header: {  }
       footer: {  }
       empty: {  }
