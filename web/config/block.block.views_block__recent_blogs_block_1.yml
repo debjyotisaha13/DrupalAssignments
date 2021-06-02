@@ -1,24 +1,24 @@
-uuid: 30a9d577-08b3-455d-a499-1e4176909491
+uuid: 52bf11a8-1238-444b-83e9-2b6f45b53fbe
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.blogs
+    - views.view.recent_blogs
   module:
     - views
   theme:
     - mytheme
-id: mytheme_views_block__blogs_block_1
+id: views_block__recent_blogs_block_1
 theme: mytheme
 region: sidebar_second
-weight: -7
+weight: 0
 provider: null
-plugin: 'views_block:blogs-block_1'
+plugin: 'views_block:recent_blogs-block_1'
 settings:
-  id: 'views_block:blogs-block_1'
+  id: 'views_block:recent_blogs-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
-  items_per_page: none
+  items_per_page: '5'
 visibility: {  }
