@@ -1,0 +1,27 @@
+uuid: 26fed0ec-2d0f-4b1f-a39f-3cc7d3af30d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.show_file
+    - field.storage.block_content.field_file_upload
+  module:
+    - file
+id: block_content.show_file.field_file_upload
+field_name: field_file_upload
+entity_type: block_content
+bundle: show_file
+label: 'File Upload'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf jpeg png jpg gif docx doc yml php html css'
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

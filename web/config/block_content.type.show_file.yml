@@ -1,0 +1,8 @@
+uuid: 95317d43-b71d-4adf-a385-11923d2f7335
+langcode: en
+status: true
+dependencies: {  }
+id: show_file
+label: 'Show File'
+revision: 0
+description: 'Shows a file uploaded by admin'

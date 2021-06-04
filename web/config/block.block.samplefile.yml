@@ -1,0 +1,30 @@
+uuid: 7719653e-0a41-412e-b401-43a46796bf58
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:show_file:8ad41b46-4483-4112-964f-0dbc58d3b9b8'
+  module:
+    - block_content
+    - system
+  theme:
+    - mytheme
+id: samplefile
+theme: mytheme
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'block_content:8ad41b46-4483-4112-964f-0dbc58d3b9b8'
+settings:
+  id: 'block_content:8ad41b46-4483-4112-964f-0dbc58d3b9b8'
+  label: 'Sample File'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
