@@ -64,3 +64,17 @@ article .field--name-field-title {
 .view-content {
   text-align: center;
 }
+
+.site-footer .content {
+  text-align: center;
+}
+
+.site-footer .content ul{
+  text-align: center;
+  display: inline-block;
+}
+
+.site-footer .content label {
+  display: inline-block;
+  width: 10rem;
+}
