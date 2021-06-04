@@ -49,3 +49,28 @@ expression:
             rules_tokens: {  }
         provides_mapping: {  }
         action_id: rules_email_to_users_of_role
+      -
+        id: rules_action
+        uuid: b23109d0-a349-46e1-b167-645bfdf2abbe
+        weight: 0
+        context_values:
+          to:
+            - '{{node.uid.entity.mail.value}}'
+          subject: 'New content Added'
+          message: '{{node.title.value}} created by {{node.uid.entity.name.value}}'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_send_email
