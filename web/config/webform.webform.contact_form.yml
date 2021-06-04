@@ -12,7 +12,7 @@ id: contact_form
 title: 'Contact Form'
 description: ''
 category: ''
-elements: "first_name:\n  '#type': textfield\n  '#title': 'First Name'\n  '#placeholder': 'Enter your First Name'\n  '#required': true\n  '#required_error': 'First name is required'\n  '#pattern': '^[a-zA-Z ]+$'\n  '#pattern_error': 'Should contain alphabets only'\n  '#label_attributes':\n    style: 'color: white; font-size: large;'\nlast_name:\n  '#type': textfield\n  '#title': 'Last Name'\n  '#placeholder': 'Enter your Last name'\n  '#required': true\n  '#required_error': 'Last name is required'\n  '#pattern': '^[a-zA-Z ]+$'\n  '#pattern_error': 'Should contain alphabets only'\n  '#label_attributes':\n    style: 'color: white; font-size: large;'\nphone_number:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#placeholder': 'Enter your phone number'\n  '#required': true\n  '#required_error': 'Phone number is required'\n  '#unique': true\n  '#unique_user': true\n  '#unique_error': 'A user is already registered with this number.'\n  '#pattern': '^[0-9]{10}+$'\n  '#pattern_error': 'Should contain ten digits only'\n  '#label_attributes':\n    style: 'color: white; font-size: large;'\nemail:\n  '#type': email\n  '#title': Email\n  '#placeholder': abc@example.com\n  '#required': true\n  '#required_error': 'Email ID is required'\n  '#unique': true\n  '#unique_error': 'A user is already registered with this email.'\n  '#pattern': '^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9]+[.][a-zA-Z]$'\n  '#pattern_error': 'Enter a valid email'\n  '#label_attributes':\n    style: 'color: white; font-size: large;'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__attributes':\n    style: 'color: #faa80f; background-color: #4a0ffa; font-weight: bold; padding: 15px; border-radius: 30px; text-transform: uppercase;'"
+elements: "first_name:\n  '#type': textfield\n  '#title': 'First Name'\n  '#placeholder': 'Enter your First Name'\n  '#required': true\n  '#required_error': 'First name is required'\n  '#pattern': '^[a-zA-Z ]+$'\n  '#pattern_error': 'Should contain alphabets only'\n  '#label_attributes':\n    style: 'color: white; font-size: large;'\nlast_name:\n  '#type': textfield\n  '#title': 'Last Name'\n  '#placeholder': 'Enter your Last name'\n  '#required': true\n  '#required_error': 'Last name is required'\n  '#pattern': '^[a-zA-Z ]+$'\n  '#pattern_error': 'Should contain alphabets only'\n  '#label_attributes':\n    style: 'color: white; font-size: large;'\nphone_number:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#placeholder': 'Enter your phone number'\n  '#required': true\n  '#required_error': 'Phone number is required'\n  '#unique': true\n  '#unique_user': true\n  '#unique_error': 'A user is already registered with this number.'\n  '#pattern': '^[0-9]{10}+$'\n  '#pattern_error': 'Should contain ten digits only'\n  '#label_attributes':\n    style: 'color: white; font-size: large;'\nemail:\n  '#type': email\n  '#title': Email\n  '#placeholder': abc@example.com\n  '#required': true\n  '#required_error': 'Email ID is required'\n  '#pattern': '^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9]+[.][a-zA-Z]+$'\n  '#pattern_error': 'Enter a valid email'\n  '#label_attributes':\n    style: 'color: white; font-size: large;'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__attributes':\n    style: 'color: #faa80f; background-color: #4a0ffa; font-weight: bold; padding: 15px; border-radius: 30px; text-transform: uppercase;'"
 css: ''
 javascript: ''
 settings:
@@ -191,5 +191,42 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    label: Email
+    notes: ''
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: _default
+      to_options: {  }
+      cc_mail: '[current-user:mail]'
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
 variants: {  }
