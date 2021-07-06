@@ -1,0 +1,12 @@
+mymodule.first-controller:
+  path: '/first-controller/{num1}/{num2}'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\FirstController::first'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      num1:
+        type: integer
+      num2:
+        type: integer
