@@ -236,7 +236,7 @@ handlers:
     label: 'Mailbox Email Validator'
     notes: ''
     handler_id: mailbox_email_validator
-    status: true
+    status: false
     conditions: {  }
     weight: 0
     settings: {  }
