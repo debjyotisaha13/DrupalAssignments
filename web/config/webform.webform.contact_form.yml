@@ -1,7 +1,9 @@
 uuid: 7a990043-d28e-42f1-8b73-22fec927a7cf
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - mymodule
 open: null
 close: null
 weight: 0
@@ -229,4 +231,13 @@ handlers:
       sender_name: ''
       theme_name: ''
       parameters: {  }
+  mailbox_email_validator:
+    id: my_module_custom_validator
+    label: 'Mailbox Email Validator'
+    notes: ''
+    handler_id: mailbox_email_validator
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
 variants: {  }
