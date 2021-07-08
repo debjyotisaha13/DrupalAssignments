@@ -1,6 +1,7 @@
 <?php
 
 use \Drupal\Core\Form\FormStateInterface;
+use \Drupal\mymodule\Validate\ValidateEmail;
 
 
 /**
@@ -11,10 +12,10 @@ use \Drupal\Core\Form\FormStateInterface;
  * @param array              $context
 */
 function mymodule_webform_element_alter(array &$element, FormStateInterface $form_state, array $context){
-
-    if (isset($element['#webform_id']) && $element['#webform_id'] === 'contact_form--email') {
+  if (isset($element['#webform_id']) && $element['#webform_id'] === 'contact_form--email') {
+      $validate = ValidateEmail::create(Drupal::getContainer());
     $element['#element_validate'][] = [
-        'Drupal\mymodule\Validate\ValidateEmail',
+        $validate,
         'validate'
     ];
   }

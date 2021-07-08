@@ -1,0 +1,4 @@
+services:
+  mymodule.validate:
+    class: Drupal\mymodule\Validate\ValidateEmail
+    arguments: ['@http_client','@config.factory']
