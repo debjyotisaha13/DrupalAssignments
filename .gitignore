@@ -9,8 +9,6 @@
 # Ignore sensitive information
 /web/sites/*/*settings*.php
 /web/sites/*/*services*.yml
-# Ignore sensitive config files
-/web/config/mymodule.settings.yml
 # Ignore Drupal's file directory
 /web/sites/*/files/
 /web/sites/*/public/
