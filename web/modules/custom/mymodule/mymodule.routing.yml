@@ -10,3 +10,13 @@ mymodule.first-controller:
         type: integer
       num2:
         type: integer
+
+mymodule.config_form:
+  path: '/ConfigForm'
+  defaults:
+    _form: '\Drupal\mymodule\Form\ConfigForm'
+    _title: 'ConfigForm'
+  requirements:
+    _permission: 'access adminsitration pages'
+  options:
+    _admin_route: TRUE

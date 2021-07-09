@@ -1,0 +1,22 @@
+<?php
+
+use \Drupal\Core\Form\FormStateInterface;
+use \Drupal\mymodule\Validate\ValidateEmail;
+
+
+/**
+ * Implement hook_form_alter
+ *
+ * @param array              $element
+ * @param FormStateInterface $form_state
+ * @param array              $context
+*/
+function mymodule_webform_element_alter(array &$element, FormStateInterface $form_state, array $context){
+  if (isset($element['#webform_id']) && $element['#webform_id'] === 'contact_form--email') {
+      $validate = ValidateEmail::create(Drupal::getContainer());
+    $element['#element_validate'][] = [
+        $validate,
+        'validate'
+    ];
+  }
+}
