@@ -1,0 +1,25 @@
+uuid: 9e2f3179-7fc9-4217-bd65-e12c1df39c19
+langcode: en
+status: true
+dependencies:
+  module:
+    - mymodule
+    - system
+  theme:
+    - mytheme
+id: activeusersblock
+theme: mytheme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: active_users
+settings:
+  id: active_users
+  label: 'Active Users block'
+  provider: mymodule
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
