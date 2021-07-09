@@ -20,3 +20,12 @@ mymodule.config_form:
     _permission: 'access adminsitration pages'
   options:
     _admin_route: TRUE
+
+mymodule.mailbox-controller:
+  path: '/admin/mailbox-controller'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\MailboxController::showCredentials'
+  requirements:
+    _permission: 'access adminsitration pages'
+  options:
+    _admin_route: TRUE
