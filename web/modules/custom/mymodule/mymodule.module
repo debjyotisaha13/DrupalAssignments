@@ -11,7 +11,7 @@ use \Drupal\mymodule\Validate\ValidateEmail;
  * @param FormStateInterface $form_state
  * @param array              $context
 */
-function mymodule_webform_element_alter(array &$element, FormStateInterface $form_state, array $context){
+function mymodule_webform_element_alter(array &$element, FormStateInterface $form_state, array $context) {
   if (isset($element['#webform_id']) && $element['#webform_id'] === 'contact_form--email') {
       $validate = ValidateEmail::create(Drupal::getContainer());
     $element['#element_validate'][] = [
@@ -19,4 +19,10 @@ function mymodule_webform_element_alter(array &$element, FormStateInterface $for
         'validate'
     ];
   }
+}
+
+function mymodule_theme($existing, $type, $theme, $path) {
+  return [
+    'mymodule_template'=> ['variables'=> ['users' => []]]
+  ];
 }
