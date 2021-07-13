@@ -1,0 +1,25 @@
+uuid: c4b7e557-50db-4b8a-9cf7-6ee3347a71db
+langcode: en
+status: true
+dependencies:
+  module:
+    - banner
+    - system
+  theme:
+    - mytheme
+id: pagebanner
+theme: mytheme
+region: featured_top
+weight: 0
+provider: null
+plugin: page_banner
+settings:
+  id: page_banner
+  label: 'Page Banner'
+  provider: banner
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

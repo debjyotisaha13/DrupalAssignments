@@ -26,5 +26,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/contact\r\n/webform/contact_form/test"
+    pages: "/contact\r\n/webform/contact_form/test\r\n<front>"
     negate: true
