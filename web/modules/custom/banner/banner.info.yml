@@ -1,0 +1,5 @@
+name: Subtheme Banner Module
+type: module
+core_version_requirement: ^8 || ^9
+description: 'Subtheme Banner Module'
+package: Custom
