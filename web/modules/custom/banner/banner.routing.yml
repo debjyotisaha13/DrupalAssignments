@@ -1,4 +1,4 @@
-mymodule.carousel_form:
+banner.carousel_form:
   path: '/admin/structure/CarouselForm'
   defaults:
     _form: '\Drupal\banner\Form\CarouselForm'
