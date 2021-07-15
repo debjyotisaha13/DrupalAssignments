@@ -1,0 +1,7 @@
+services:
+  customlogin.route_subscriber:
+    class: Drupal\customlogin\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+    arguments:
+      - '@config.factory'

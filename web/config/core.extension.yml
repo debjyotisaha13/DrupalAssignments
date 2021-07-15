@@ -20,6 +20,7 @@ module:
   contextual: 0
   ctools: 0
   ctools_views: 0
+  customlogin: 0
   datetime: 0
   dblog: 0
   devel: 0
