@@ -1,0 +1,5 @@
+name: Custom User Login Path
+type: module
+core_version_requirement: ^8 || ^9
+description: 'Change the user login path'
+package: Custom

@@ -1,0 +1,9 @@
+customlogin.config_form:
+  path: '/LoginUrlForm'
+  defaults:
+    _form: '\Drupal\customlogin\Form\ConfigForm'
+    _title: 'LoginUrlForm'
+  requirements:
+    _permission: 'access adminsitration pages'
+  options:
+    _admin_route: TRUE
