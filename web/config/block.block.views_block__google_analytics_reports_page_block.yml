@@ -1,25 +1,24 @@
-uuid: d2b30b56-82c4-4da1-84f2-eee948975836
+uuid: 5e8a3179-e542-485d-a87c-a54c4ca665b8
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.blogs_by_author
+    - views.view.google_analytics_reports_page
   module:
     - views
   theme:
     - mytheme
-id: mytheme_views_block__blogs_by_author_block_1_2
+id: views_block__google_analytics_reports_page_block
 theme: mytheme
 region: sidebar_first
-weight: -5
+weight: -11
 provider: null
-plugin: 'views_block:blogs_by_author-block_1'
+plugin: 'views_block:google_analytics_reports_page-block'
 settings:
-  id: 'views_block:blogs_by_author-block_1'
+  id: 'views_block:google_analytics_reports_page-block'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility: {  }

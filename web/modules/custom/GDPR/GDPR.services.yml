@@ -1,0 +1,5 @@
+services:
+  GDPR.database:
+    class: Drupal\GDPR\Service\DatabaseService
+    arguments:
+      - '@database'
