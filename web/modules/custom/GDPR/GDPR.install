@@ -1,0 +1,30 @@
+<?php
+function GDPR_schema() {
+    $schema['gdpr_consent_table'] = [
+        'description' => 'Stores name, email and consent of a user',
+        'fields' => [
+            'id' => [
+                'description'=> 'User ID',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ],
+            'name' => [
+                'description' => 'Name of the user',
+                'type' => 'varchar',
+                'length' => '150',
+                'not null' => TRUE,
+                'default' => 0,
+            ],
+            'email' => [
+                'description' => 'Email of the user',
+                'type' => 'varchar',
+                'length' => '150',
+                'not null' => TRUE,
+                'default' => 0,
+            ],
+        ],
+        'primary key' => ['id'],
+    ];
+    return $schema;
+}

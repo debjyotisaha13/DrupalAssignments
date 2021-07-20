@@ -12,7 +12,7 @@ dependencies:
 id: samplefile
 theme: mytheme
 region: sidebar_first
-weight: -10
+weight: -9
 provider: null
 plugin: 'block_content:8ad41b46-4483-4112-964f-0dbc58d3b9b8'
 settings:

@@ -1,0 +1,7 @@
+GDPR.config_form:
+  path: '/GDPR'
+  defaults:
+    _form: '\Drupal\GDPR\Form\ConsentForm'
+    _title: 'GDPR Consent Form'
+  requirements:
+    _permission: 'access content'
