@@ -1,0 +1,50 @@
+uuid: 66bec7e0-1fe5-4340-8a3a-b5378bbec975
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.leaders_paragraph.field_description
+    - field.field.paragraph.leaders_paragraph.field_designation
+    - field.field.paragraph.leaders_paragraph.field_image
+    - field.field.paragraph.leaders_paragraph.field_name
+    - paragraphs.paragraphs_type.leaders_paragraph
+  module:
+    - image
+    - text
+id: paragraph.leaders_paragraph.default
+targetEntityType: paragraph
+bundle: leaders_paragraph
+mode: default
+content:
+  field_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_designation:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_name:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

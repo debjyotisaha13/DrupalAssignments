@@ -28,6 +28,7 @@ module:
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
   entityqueue: 0
   fast404: 0
   field: 0
@@ -81,6 +82,7 @@ module:
   pathauto: 1
   webform_bootstrap: 1
   views: 10
+  paragraphs: 11
   standard: 1000
 theme:
   bartik: 0

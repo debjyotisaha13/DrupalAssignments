@@ -1,0 +1,18 @@
+uuid: a165e0b8-dcc2-4020-849e-2d21c6ec00e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.our_leaders.field_leader
+    - node.type.our_leaders
+  module:
+    - user
+id: node.our_leaders.teaser
+targetEntityType: node
+bundle: our_leaders
+mode: teaser
+content: {  }
+hidden:
+  field_leader: true
+  links: true
