@@ -1,0 +1,18 @@
+uuid: 95799b34-e897-4535-b869-a527f3faa6c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Our Leaders'
+type: our_leaders
+description: 'Shows details of our leaders.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

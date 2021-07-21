@@ -1,0 +1,19 @@
+uuid: 9a62d9eb-35c3-41f7-93d0-ace445cf1d9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.leaders_paragraph
+id: paragraph.leaders_paragraph.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: leaders_paragraph
+label: Description
+description: 'Description of the leader.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -65,16 +65,28 @@ article .field--name-field-title {
   text-align: center;
 }
 
-.site-footer .content {
-  text-align: center;
+.leader-para .field__item {
+  color: #ffffff;
 }
 
-.site-footer .content ul{
-  text-align: center;
-  display: inline-block;
+.leader-para .field__item .field.field--name-field-name {
+  text-decoration: underline;
+  font-weight: bolder;
+  display: block;
 }
 
-.site-footer .content label {
-  display: inline-block;
-  width: 10rem;
+.node .field--type-image {
+  float: none;
+}
+
+.leader-para {
+  border-left: 5px solid beige;
+  border-right: 5px solid beige;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+.leader-para .field--name-field-designation::before {
+  content: "Designation: ";
+  font-weight: bolder;
 }

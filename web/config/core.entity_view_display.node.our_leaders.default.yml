@@ -1,0 +1,26 @@
+uuid: ef157a70-703b-4129-91ee-8b6507713d0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.our_leaders.field_leader
+    - node.type.our_leaders
+  module:
+    - entity_reference_revisions
+    - user
+id: node.our_leaders.default
+targetEntityType: node
+bundle: our_leaders
+mode: default
+content:
+  field_leader:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

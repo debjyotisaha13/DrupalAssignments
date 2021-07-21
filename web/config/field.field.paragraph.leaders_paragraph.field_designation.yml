@@ -1,0 +1,19 @@
+uuid: 6f3b21ef-2d08-4b41-8438-c7a014632318
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_designation
+    - paragraphs.paragraphs_type.leaders_paragraph
+id: paragraph.leaders_paragraph.field_designation
+field_name: field_designation
+entity_type: paragraph
+bundle: leaders_paragraph
+label: Designation
+description: 'Designation of the leader.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

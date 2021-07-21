@@ -1,0 +1,10 @@
+uuid: b677367c-612c-456c-895f-137ef0b2d387
+langcode: en
+status: true
+dependencies: {  }
+id: leaders_paragraph
+label: 'Leaders Paragraph'
+icon_uuid: null
+icon_default: null
+description: 'Contains name, designation, image and description for leaders'
+behavior_plugins: {  }

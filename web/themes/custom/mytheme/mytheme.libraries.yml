@@ -4,6 +4,10 @@ global-styling:
     theme:
       //fonts.googleapis.com/css2?family=Pattaya&display=swap: { type: external }
       css/style.css: {}
+    footer:
+      css/footer.css: {}
+    header:
+      css/header.css: {}
   js:
     js/script.js: {}
 
@@ -17,3 +21,23 @@ error-404:
   css:
     theme:
       css/style404.css: {}
+
+blogs:
+  css:
+    theme:
+      css/blogs.css: {}
+
+authors:
+  css:
+    theme:
+      css/authors.css: {}
+
+slick:
+  css:
+    theme:
+      css/slick.css: {}
+      css/slick-theme.css: {}
+      css/custom.css: {}
+  js:
+    js/slick.min.js: {}
+    js/custom.js: {}

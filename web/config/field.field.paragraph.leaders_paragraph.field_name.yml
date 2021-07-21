@@ -1,0 +1,21 @@
+uuid: 11d9ec10-5f3d-4a73-9193-7e1de9887ad4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.leaders_paragraph
+  module:
+    - text
+id: paragraph.leaders_paragraph.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: leaders_paragraph
+label: Name
+description: 'Name of the Leader'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
